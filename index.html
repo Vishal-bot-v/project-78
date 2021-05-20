@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>famous book</title>
+    </head>
+    <body>
+        <img src="https://th.bing.com/th/id/Rb3c001241ba619c11da3a521f2c0588d?rik=Pos4WkePvGWL0g&pid=ImgRaw" id="family_member_imge">
+        <h4 id="family_member_name"></h4>
+        <button onclick="update();">Next</button>
+    </body>
+    <script>
+        var images = 
+        ["https://image.cnbcfm.com/api/v1/image/104891709-Bill_Gates_the_co-Founder.jpg?v=1558120888&w=1400&h=950",
+         "https://th.bing.com/th/id/Ra10c32c449e510df37d83e7f93051eed?rik=uQdv2pvSvXZIgA&pid=ImgRaw",
+         "https://th.bing.com/th/id/R8f2f107a53a7e74d5218c0596298695d?rik=r%2b1w1IA9jFJjBw&pid=ImgRaw",
+         "https://th.bing.com/th/id/Rd8c99944368e00afb0c407bc441b0127?rik=OrvLGSF6KsL9iQ&pid=ImgRaw",
+         "https://i2.wp.com/www.heyuguys.com/images/2016/12/Peter-Parker.png?fit=1200%2C600&ssl=1",];
+
+         var name = ["famous people", "Bill Gates", "Elon Musk", "Robert Downey Jr.", "cristiano ronaldo", "Tom Holland"];
+         var i = 0;
+         function update()
+         {
+             i++;
+             var numbers_of_family_member_in_array = 5
+             if(i > numbers_of_family_member_in_array )
+             {
+                 i = 0;
+             }
+             var updated_Image = image[i];
+             updatedName = names[0];
+             document.getElementById("family_member_image").src = updatedIamge;
+             document.getElementById("family_member_name").innerHTML = updatedNames;
+         }
+    </script>
+</html>
